@@ -1,0 +1,39 @@
+7 little words solver - Cody's personal notes
+
+
+a. enter word length
+b. enter tiles
+c. give most likely solution
+
+1. create array of length seven (7 little words, duh)
+2. fill in 1 with a
+3. create array of length 20 (number of tiles)
+4. fill 3 with 'tile' objects created from b
+
+5. load dictionary
+	--sort into alphabetical groups of same length words
+6. eliminate all words with no matching length
+7. eliminate all words not starting with letter combinations that match tiles
+8. eliminate all words not ending with letter combinations that match tiles
+9. create algorithm to process different tile length combinations for each word length
+	--tiles can only be of length 2, 3, or 4
+	--DANGER: if the word length is 4, it can be 2+2 or 4. how do i distinguish that?
+	ex: words of length 4 can only contain tiles of length 2 + 2
+		words of length 5 can only contain tiles of length 2 + 3
+		6: 2 + 2 + 2 , 3 + 3, 4 + 2
+		7: 7 - 2 = 5, 7 - 3 = 4, 7 - 4 = 3
+		8: 8 - 2 = 6, 8 - 3 = 5, 8 - 4 = 4
+
+10. create structure of all possible words, compare vs dictionary. 
+	--eliminate combos with no vowels (subroutine checkVowels?)
+	
+	
+
+
+PROS:
+	variable - can adjust if you have some words solved and tiles used
+			 - you can search for just one word length if you don't want to spoil the whole puzzle
+
+CONS:
+	limited - can only search for words in the dictionary (no pronouns - the game sometimes has pronouns)
+	repetative - words can include repeat tiles. a future version will include a narrowing function - displays "predicted" solutions based on 
