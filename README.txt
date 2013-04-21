@@ -7,6 +7,8 @@ This program was designed merely to practice Ruby, and have some fun while doing
 
 NOTE: The solver reads from a dictionary of English words. Therefore, pronouns and other languages are not supported.
 
+To run the program: you need to have Ruby installed, and know how to open a ruby program in the command prompt. I'd recommend Googling those if you have any questions about either of them. Open the 'main.rb' file, and follow directions.
+
 The program asks a series of questions in order to accomodate your needs:
 	1. How many unsolved words to you need help solving?
 	2. How many unused tiles do you have?
